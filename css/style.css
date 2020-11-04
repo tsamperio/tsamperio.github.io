@@ -93,7 +93,7 @@ dd {
 main {
   grid-area: main;
   grid-gap: 1em;
-  margin: .5em;
+  margin: .7em;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -123,18 +123,19 @@ nav {
   font-size: 14px;
 }
 
-footer {
-  grid-area: footer;
-
-  background-color: #b8d3de;
-  margin-top: 12px;
-}
-
 aside {
   grid-area: aside;
 
   border: 2px solid #F1BF00;
   padding: .5em;
+  margin: .5em;
+}
+
+footer {
+  grid-area: footer;
+
+  background-color: #b8d3de;
+  margin-top: 12px;
 }
 
 header img {
@@ -198,8 +199,4 @@ footer p {
 
 #government {
   grid-area: government;
-}
-
-#economy table {
-  margin-bottom: 55px;
 }
