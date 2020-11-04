@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@500&display=swap');
+
+body {
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+}
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "nav nav"
+  "header header"
+  "main main"
+  "footer footer";
+}
+
+a,
+a:link {
+  color: #013a67; /*navy*/
+}
+
+a:visited {
+  color: #E2725B; /*terra cotta */
+}
+
+a:focus {
+  color: #F1BF00; /*flag yellow*/
+}
+
+a:hover {
+  color: #758689; /*silver */
+}
+
+a:active {
+  color: #A9BA9D; /*laurel*/
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", "Arial", "sans-serif";
+  font-weight: 500;
+}
+
+h1 {
+  color: #fff;
+  font-size: 4em;
+  text-align: center;
+  z-index: 100;
+  position: relative;
+}
+
+h2 {
+  color: #013a67;
+  border-bottom: 2px solid;
+}
+
+h3 {
+  color: #6bb5d8;
+  margin-bottom: -6px;
+}
+
+h4 {
+  color: #6bb5d8;
+  margin-bottom: -6px;
+  margin-top: 0;
+}
+
+table {
+  border: 1px solid #013a67;
+  width: 75%;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #013a67;
+  text-align: center;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+main {
+  grid-area: main;
+  grid-gap: 1em;
+  margin: .5em;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "introduction introduction"
+  "people economy"
+  "people economy"
+  "government government";
+}
+
+header {
+  grid-area: header;
+  padding-top: 0;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  grid-area: nav;
+
+  background-color: #b8d3de;
+  text-align: right;
+  font-size: 14px;
+}
+
+footer {
+  grid-area: footer;
+
+  background-color: #b8d3de;
+  margin-top: 12px;
+}
+
+aside {
+  grid-area: aside;
+
+  border: 2px solid #F1BF00;
+  padding: .5em;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  margin-top: -160px;
+  padding: 0;
+  z-index: 10;
+  position: relative;
+}
+
+figcaption {
+  color: #fff;
+  font-size: 10px;
+  text-align: right;
+  margin-top: -2em;
+  padding-right: .5em;
+  padding-bottom: 2em;
+  position: relative;
+  z-index: 30;
+}
+
+nav li {
+  display: inline-block;
+  padding-right: .5em;
+}
+
+main li {
+  list-style-type: square;
+}
+
+img.wrap {
+  float: left;
+  width: 320px;
+  height: 214px;
+  margin-top: 17px;
+  margin-right: 14px;
+}
+
+aside p {
+  margin-bottom: 8px;
+}
+
+footer p {
+  padding-left: 10px;
+}
+
+#introduction {
+  grid-area: introduction;
+}
+
+#people {
+  grid-area: people;
+  padding-right: .5em;
+}
+
+#economy {
+  grid-area: economy;
+}
+
+#government {
+  grid-area: government;
+}
+
+#economy table {
+  margin-bottom: 55px;
+}
