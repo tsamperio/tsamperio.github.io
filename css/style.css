@@ -2,6 +2,8 @@
 
 body {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 #wrapper {
@@ -27,15 +29,22 @@ a:visited {
 }
 
 a:focus {
-  color: #F1BF00; /*flag yellow*/
+  color: #758689; /*silver */
 }
 
 a:hover {
-  color: #758689; /*silver */
+  color: #F1BF00; /*flag yellow*/
 }
 
 a:active {
   color: #A9BA9D; /*laurel*/
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+  color: #013a67; /* Navy */
+  text-decoration: none;
 }
 
 h1,
@@ -56,16 +65,20 @@ h1 {
 
 h2 {
   color: #013a67;
-  border-bottom: 2px solid;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  border-bottom: 1px solid;
 }
 
 h3 {
-  color: #6bb5d8;
+  color: #6bb5d8; /* sky blue */
+  font-size: 1.2em;
   margin-bottom: -6px;
 }
 
 h4 {
-  color: #6bb5d8;
+  color: #6bb5d8; /*sky blue */
+  font-size: 1.2em;
   margin-bottom: -6px;
   margin-top: 0;
 }
@@ -73,7 +86,9 @@ h4 {
 table {
   border: 1px solid #013a67;
   width: 75%;
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
 }
 
 th, td {
@@ -90,18 +105,13 @@ dd {
   margin-bottom: 5px;
 }
 
-main {
-  grid-area: main;
-  grid-gap: 1em;
-  margin: .7em;
+nav {
+  grid-area: nav;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-  "introduction introduction"
-  "people economy"
-  "people economy"
-  "government government";
+  background-color: #b8d3de;
+  font-size: 14px;
+  text-align: right;
+  padding: 6px;
 }
 
 header {
@@ -115,12 +125,29 @@ figure {
   padding: 0;
 }
 
-nav {
-  grid-area: nav;
-
-  background-color: #b8d3de;
+figcaption {
+  color: #fff;
+  font-size: 10px;
   text-align: right;
-  font-size: 14px;
+  margin-top: -2em;
+  padding-right: .5em;
+  padding-bottom: 2em;
+  position: relative;
+  z-index: 30;
+}
+
+main {
+  grid-area: main;
+  grid-gap: 1em;
+  margin: .6em;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "introduction introduction"
+  "people economy"
+  "people economy"
+  "government government";
 }
 
 aside {
@@ -142,21 +169,10 @@ header img {
   width: 100%;
   height: auto;
   margin: 0;
-  margin-top: -160px;
+  margin-top: -168px;
   padding: 0;
   z-index: 10;
   position: relative;
-}
-
-figcaption {
-  color: #fff;
-  font-size: 10px;
-  text-align: right;
-  margin-top: -2em;
-  padding-right: .5em;
-  padding-bottom: 2em;
-  position: relative;
-  z-index: 30;
 }
 
 nav li {
@@ -190,11 +206,12 @@ footer p {
 
 #people {
   grid-area: people;
-  padding-right: .5em;
+  padding-right: 1em;
 }
 
 #economy {
   grid-area: economy;
+  padding-left: 1em;
 }
 
 #government {
