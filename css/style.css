@@ -280,6 +280,13 @@ main {
   padding: 0;
 }
 
+#menorca figcaption,
+#paris figcaption,
+#hongkong figcaption {
+  padding-right: 1.7em;
+  font-size: 10px;
+}
+
 /*Projects Style */
 #masters p,
 #professional p {
