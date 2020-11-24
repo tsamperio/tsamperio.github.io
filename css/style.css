@@ -280,6 +280,16 @@ main {
   padding: 0;
 }
 
+#menorca,
+#paris,
+#hongkong {
+  margin-left: .5em;
+}
+
+#travel h2 {
+  margin-left: .4em;
+}
+
 #menorca figcaption,
 #paris figcaption,
 #hongkong figcaption {
