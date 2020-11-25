@@ -225,7 +225,7 @@ main {
 
 #education main section {
   display: grid;
-  grid-column-gap: 5em;
+  grid-column-gap: 5.8em;
   grid-template-areas:
    "head head head"
    "one two three";
